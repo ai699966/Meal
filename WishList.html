@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Meal</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/styl.css" />
+  </head>
+  <body>
+    <div
+    class="py-3 d-none d-sm-block text-white fw-bold"
+    style="background-color: #2a3855; color: white"
+  >
+    <div class="container">
+      <div class="row align-items-center gx-4">
+        <div class="col-auto d-none d-lg-block fs--1">
+          <i class="fa-solid fa-location-dot" style="color: #fdd428"></i>
+          1010 Avenue, New York, NY 10018 US.
+        </div>
+        <div
+          class="col-auto ms-md-auto order-md-2 d-none d-sm-flex fs--1 align-items-center"
+        >
+          <i class="fa-solid fa-clock" style="color: #fdd428"></i>
+          Mon-Sat, 8.00-18.00. Sunday CLOSED
+        </div>
+        <div class="col-auto">
+          <a
+            class="ms-2 fs--1 d-inline text-white fw-bold"
+            href="tel:2123865575"
+          >
+            <i class="fa-solid fa-phone" style="color: #fdd428"></i>
+            212 386 5575, 212 386 5576</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+    <header>
+      <nav class="navbar navbar-expand-lg px-4" style="color: #2a3855;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="Image/Happy.png"
+              alt="Logo"
+              width="80"
+              height="80"
+              class="d-inline-block align-text-top rounded-circle"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: #fff;"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link linkColor"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link linkColor" href="Meals.html">Meals</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link linkColor" href="WishList.html"
+                  >Wish Meals <span class="badge text-bg-warning" id="wish">0</span>
+                  </a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link linkColor" href="about.html">About</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-around social" role="search">
+              <p class="cursor mx-3">
+                <i class="fa-brands fa-facebook " style="color: #ffffff;"></i>
+              </p>
+              <p class="cursor mx-3">
+                <i class="fa-brands fa-instagram "  style="color: #ffffff;"></i>
+              </p>
+              <p class="cursor mx-3">
+                <i class="fa-brands fa-twitter "  style="color: #ffffff;"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="pageName">
+        <h1 class="text-center text-danger">Happy Meal</h1>
+        <h3 class="text-center text-danger">
+          Enjoy with happy different taste which will take you to another place
+        </h3>
+      </div> -->
+    </header>
+        <section class=" detailsPage">
+          <h1 class="text-center my-4" style="color: #fdd428">Beef and Mustard Pie</h1>
+          <div id="wishList" class="container my-3 details">
+            <div class="detailsImg my-3">
+              <img src="https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg" alt="Meal Image"/>
+          </div>
+            <div class="row">
+            <div class="col">
+              <table class="table table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope=" table-primary">#</th>
+                    <th scope=" table-primary">ingredient</th>
+                    <th scope=" table-primary">Measure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Beef</td>
+                    <td>1kg</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Plain Flour</td>
+                    <td>2 tbs</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Rapeseed Oil</td>
+                    <td>2 tbs</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Red Wine</td>
+                    <td>200ml</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Beef Stock</td>
+                    <td>400ml</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Onion</td>
+                    <td>1 finely sliced</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Carrots</td>
+                    <td>2 chopped</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>Thyme</td>
+                    <td>3 sprigs</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>Mustard</td>
+                    <td>2 tbs</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>Egg Yolks</td>
+                    <td>2 free-range</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>Puff Pastry</td>
+                    <td>400g</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>Green Beans</td>
+                    <td>300g</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13</th>
+                    <td>Butter</td>
+                    <td>25g </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">14</th>
+                    <td>Salt</td>
+                    <td>pinch</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">15</th>
+                    <td>Pepper</td>
+                    <td>pinch</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class ="col detailsCard ">
+              <!-- <div class="video">
+                <video width="320" height="240" controls>
+                  <source src="https://www.youtube.com/watch?v=nMyBC9staMU" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div> -->
+              
+              <div class="recipe">
+                <h3 style="color: #fdd428; font-weight: bold;">How to cook it : </h3>
+
+                <p class="text-white">Preheat the oven to 150C/300F/Gas 2.\r\nToss the beef and flour together in a bowl with some salt and black pepper.\r\nHeat a large casserole until hot, add half of the rapeseed oil and enough of the beef to just cover the bottom of the casserole.\r\nFry until browned on each side, then remove and set aside. Repeat with the remaining oil and beef.\r\nReturn the beef to the pan, add the wine and cook until the volume of liquid has reduced by half, then add the stock, onion, carrots, thyme and mustard, and season well with salt and pepper.\r\nCover with a lid and place in the oven for two hours.\r\nRemove from the oven, check the seasoning and set aside to cool. Remove the thyme.\r\nWhen the beef is cool and you're ready to assemble the pie, preheat the oven to 200C/400F/Gas 6.\r\nTransfer the beef to a pie dish, brush the rim with the beaten egg yolks and lay the pastry over the top. Brush the top of the pastry with more beaten egg.\r\nTrim the pastry so there is just enough excess to crimp the edges, then place in the oven and bake for 30 minutes, or until the pastry is golden-brown and cooked through.\r\nFor the green beans, bring a saucepan of salted water to the boil, add the beans and cook for 4-5 minutes, or until just tender.\r\nDrain and toss with the butter, then season with black pepper.\r\nTo serve, place a large spoonful of pie onto each plate with some green beans alongside.</p>
+              </div>
+              <div class="mealCardInfo">
+                  <h4 class="" style="color: #2a3855;"></h4>
+                  <!-- <div class ="addWish" style="background-color: gray;"><div><i class="fa-regular fa-heart cursor" style ="color:#fdd428;"></i></div></div> -->
+              </div>
+          </div>
+        </div>
+          </div>
+          
+        </section>
+      <footer id="site_footer" class="page_footer">
+        <div class="container">
+        <div class="cz_middle_footer">
+          <div class="row clr py-4">
+            <div class="col s6 sidebar_footer-1 clr">
+              <div
+                id="codevz_about-2"
+                class="center_on_mobile footer_widget clr codevz-widget-about"
+              >
+                <div class="codevz-widget-727 tal">
+                  <div class="codevz-widget-about-content mb-4">
+                    Happy Meals for different and happy taste, which contain The
+                    most beautiful taste for most popular meals with it's recipes
+                  </div>
+                  <div
+                    id="cz7206"
+                    class="cz7206 d-flex justify-content-around align-items-center"
+                  >
+                    <a
+                      href="#"
+                      class="cz-twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Twitter"
+                      aria-label="Twitter"
+                      ><i class="fab fa-twitter"></i></a
+                    ><a
+                      href="#"
+                      class="cz-instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Instagram"
+                      aria-label="Instagram"
+                      ><i class="fab fa-instagram"></i></a
+                    ><a
+                      href="#"
+                      class="cz-pinterest"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Pinterest"
+                      aria-label="Pinterest"
+                      ><i class="fab fa-pinterest"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s2 sidebar_footer-2 clr">
+              <div
+                id="codevz_custom_menu_list-3"
+                class="center_on_mobile footer_widget clr codevz-widget-custom-menu-2"
+              >
+                <h4 class="codevz-widget-title">Menu</h4>
+                <div class="codevz-widget-content clr">
+                  <div class="cz1285 clr">
+                    <div class="clr">
+                      <div class="my-3"><a href="index.html">Home</a></div>
+                      <div class="my-3"><a href="about.html">About</a></div>
+                      <div class="my-3"><a href="Meals.html">Meals</a></div>
+                      <div class="my-3"><a href="#">Contact</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s2 sidebar_footer-3 clr">
+              <div
+                id="codevz_custom_menu_list-4"
+                class="center_on_mobile footer_widget clr codevz-widget-custom-menu-2"
+              >
+                <h4 class="codevz-widget-title">Support</h4>
+                <div class="codevz-widget-content clr">
+                  <div class="cz1187 clr">
+                    <div class="clr">
+                      <div class="my-3"><a href="#">FAQs</a></div>
+                      <div class="my-3">
+                        <a href="#">Terms &amp; Conditions</a>
+                      </div>
+                      <div class="my-3"><a href="#">Privacy Policy </a></div>
+                      <div class="my-3"><a href="#">Report</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s2 sidebar_footer-4 clr">
+              <div
+                id="xtra_newsletter-2"
+                class="center_on_mobile footer_widget clr xtra-widget-newsletter"
+              >
+                <h4 class="codevz-widget-title">Stay in Touch</h4>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" style="color: #2a3855">@</span>
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInputGroup1"
+                      placeholder="Username"
+                    />
+                    <label for="floatingInputGroup1" style="color: #2a3855">E-mail for subscribe </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_2 my-4">
+          <div class="row elms_row">
+            <div class="clr">
+              <div class="elms_left footer_2_left">
+                <div
+                  class="cz_elm icon_footer_2_left_7 inner_icon_footer_2_left_0"
+                  style="margin-bottom: 10px"
+                >
+                  <div class="elm_icon_text">
+                    <span class="it_text" style="font-size: 14px"
+                      >Happy Meal © 2024 All Rights Reserved.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="elms_right footer_2_right">
+                <div
+                  class="cz_elm icon_footer_2_right_8 inner_icon_footer_2_right_0"
+                  style="margin-bottom: 10px"
+                >
+                  <span class="it_text ml10" style="font-size: 13px"
+                    >Track your orders</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </footer>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

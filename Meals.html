@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Meal</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/styl.css" />
+  </head>
+  <body>
+    <div
+    class="py-3 d-none d-sm-block text-white fw-bold"
+    style="background-color: #2a3855; color: white"
+  >
+    <div class="container">
+      <div class="row align-items-center gx-4">
+        <div class="col-auto d-none d-lg-block fs--1">
+          <i class="fa-solid fa-location-dot" style="color: #fdd428"></i>
+          1010 Avenue, New York, NY 10018 US.
+        </div>
+        <div
+          class="col-auto ms-md-auto order-md-2 d-none d-sm-flex fs--1 align-items-center"
+        >
+          <i class="fa-solid fa-clock" style="color: #fdd428"></i>
+          Mon-Sat, 8.00-18.00. Sunday CLOSED
+        </div>
+        <div class="col-auto">
+          <a
+            class="ms-2 fs--1 d-inline text-white fw-bold"
+            href="tel:2123865575"
+          >
+            <i class="fa-solid fa-phone" style="color: #fdd428"></i>
+            212 386 5575, 212 386 5576</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+    <header>
+      <nav class="navbar navbar-expand-lg px-4" style="color: #2a3855;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="Image/Happy.png"
+              alt="Logo"
+              width="80"
+              height="80"
+              class="d-inline-block align-text-top rounded-circle"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: #fff;"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link linkColor"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link linkColor" href="Meals.html">Meals</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link linkColor" href="WishList.html"
+                  >Wish Meals <span class="badge text-bg-warning" id="wish">0</span>
+                  </a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link linkColor" href="about.html">About</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-around social" role="search">
+              <p class="cursor mx-3">
+                <i class="fa-brands fa-facebook " style="color: #fff;"></i>
+              </p>
+              <p class="cursor mx-3">
+                <i class="fa-brands fa-instagram "  style="color: #fff;"></i>
+              </p>
+              <p class="cursor mx-3">
+                <i class="fa-brands fa-twitter "  style="color: #fff;"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="pageName">
+        <h1 class="text-center text-danger">Happy Meal</h1>
+        <h3 class="text-center text-danger">
+          Enjoy with happy different taste which will take you to another place
+        </h3>
+      </div> -->
+    </header>
+    <section class="my-4 container">
+      
+      <h1 class="text-center" id="mealsTitle" style="color: #ffffff">Recommended Today's Dishes</h1>
+      <div class="d-flex justify-content-around align-items-center">
+        <hr class="w-25 text-center text-white">
+      </div>
+      <div id="meals_Section" class="row">
+        <div class="sideBar col-2 fixed-left">
+          <h5 class="cursor category">Recommended</h5>
+          <h5 class="cursor category">Beef</h5>
+          <h5 class="cursor category">Breakfast</h5>
+          <h5 class="cursor category">Chicken</h5>
+          <h5 class="cursor category">Dessert</h5>
+          <h5 class="cursor category">Goat</h5>
+          <h5 class="cursor category">Lamb</h5>
+          <h5 class="cursor category">Miscellaneous</h5>
+          <h5 class="cursor category">Pasta</h5>
+          <h5 class="cursor category">Pork</h5>
+          <h5 class="cursor category">Seafood</h5>
+          <h5 class="cursor category">Side</h5>
+          <h5 class="cursor category">Starter</h5>
+          <h5 class="cursor category">Vegan</h5>
+          <h5 class="cursor category">Vegetarian</h5>
+        </div>
+        
+        <div id="meals" class=" col row"></div>
+      </div>
+    </section>
+    <footer id="site_footer" class="page_footer">
+      <div class="container">
+      <div class="cz_middle_footer">
+        <div class="row clr py-4">
+          <div class="col s6 sidebar_footer-1 clr">
+            <div
+              id="codevz_about-2"
+              class="center_on_mobile footer_widget clr codevz-widget-about"
+            >
+              <div class="codevz-widget-727 tal">
+                <div class="codevz-widget-about-content mb-4">
+                  Happy Meals for different and happy taste, which contain The
+                  most beautiful taste for most popular meals with it's recipes
+                </div>
+                <div
+                  id="cz7206"
+                  class="cz7206 d-flex justify-content-around align-items-center"
+                >
+                  <divhref="#"
+                    class="cz-twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Twitter"
+                    aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i></a
+                  ><a
+                    href="#"
+                    class="cz-instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Instagram"
+                    aria-label="Instagram"
+                    ><i class="fab fa-instagram"></i></a
+                  ><a
+                    href="#"
+                    class="cz-pinterest"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Pinterest"
+                    aria-label="Pinterest"
+                    ><i class="fab fa-pinterest"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s2 sidebar_footer-2 clr">
+            <div
+              id="codevz_custom_menu_list-3"
+              class="center_on_mobile footer_widget clr codevz-widget-custom-menu-2"
+            >
+              <h4 class="codevz-widget-title">Menu</h4>
+              <div class="codevz-widget-content clr">
+                <div class="cz1285 clr">
+                  <div class="clr">
+                    <div class="my-3"><a href="index.html">Home</a></div>
+                    <div class="my-3"><a href="about.html">About</a></div>
+                    <div class="my-3"><a href="Meals.html">Meals</a></div>
+                    <div class="my-3"><a href="#">Contact</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s2 sidebar_footer-3 clr">
+            <div
+              id="codevz_custom_menu_list-4"
+              class="center_on_mobile footer_widget clr codevz-widget-custom-menu-2"
+            >
+              <h4 class="codevz-widget-title">Support</h4>
+              <div class="codevz-widget-content clr">
+                <div class="cz1187 clr">
+                  <div class="clr">
+                    <div class="my-3"><a href="#">FAQs</a></div>
+                    <div class="my-3">
+                      <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                    <div class="my-3"><a href="#">Privacy Policy </a></div>
+                    <div class="my-3"><a href="#">Report</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s2 sidebar_footer-4 clr">
+            <div
+              id="xtra_newsletter-2"
+              class="center_on_mobile footer_widget clr xtra-widget-newsletter"
+            >
+              <h4 class="codevz-widget-title">Stay in Touch</h4>
+              <div class="input-group mb-3">
+                <span class="input-group-text" style="color: #2a3855">@</span>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInputGroup1"
+                    placeholder="Username"
+                  />
+                  <label for="floatingInputGroup1" style="color: #2a3855">E-mail for subscribe </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_2 my-4">
+        <div class="row elms_row">
+          <div class="clr">
+            <div class="elms_left footer_2_left">
+              <div
+                class="cz_elm icon_footer_2_left_7 inner_icon_footer_2_left_0"
+                style="margin-bottom: 10px"
+              >
+                <div class="elm_icon_text">
+                  <span class="it_text" style="font-size: 14px"
+                    >Happy Meal © 2024 All Rights Reserved.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="elms_right footer_2_right">
+              <div
+                class="cz_elm icon_footer_2_right_8 inner_icon_footer_2_right_0"
+                style="margin-bottom: 10px"
+              >
+                <span class="it_text ml10" style="font-size: 13px"
+                  >Track your orders</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    </footer>
+
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

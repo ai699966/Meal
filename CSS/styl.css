@@ -1,0 +1,281 @@
+/* #F3F3E0
+#133E87
+#608BC1
+#CBDCEB */
+
+/* 
+#2a3855
+#fdd428
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kaushan Script', cursive;
+
+}
+body {
+  background-color: #010100;
+}
+.border {
+  border: 2px solid #fff;
+}
+.cursor {
+  cursor: pointer;
+}
+/* ############################### header ############################# */
+.header {
+  height: 80vh;
+  background: url("../Image/360_F_265582946_D57tH8k6p377flQrhptz93w9bK9CN6AR.webp");
+  background-size: cover;
+  background-position: center center;
+}
+.linkColor {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+nav {
+  position: fixed;
+}
+.nav-item:hover .linkColor {
+  transform: scale(1.1);
+  color: #ffffff;
+
+}
+
+header .navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.social p {
+  color: white;
+  font-size: 1.5rem;
+}
+.pageName {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10px;
+}
+.pageName h1 {
+  font-size: 5rem;
+  color: #fdd428;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.pageName h3 {
+  font-weight: bold;
+}
+/* ############################### Home  ############################# */
+#home {
+  color: #2a3855;
+  animation: show 0.8s linear;
+
+}
+#home .info{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#home p {
+   font-size: 1.3rem;
+}
+#home .infoImg img {
+   height: 400px;
+}
+@keyframes show {
+   0% {
+      opacity: 0;
+   }
+   50%{
+      opacity: 0.5;
+   }
+   100%{
+      opacity: 1;
+   }
+   
+}
+
+.teams {
+  animation: show 0.8s linear;
+
+}
+.teams img { 
+   width: 250px;
+   height: 200px;
+}
+
+/* ############################### about ############################# */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-intro h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.about-intro p {
+  font-size: 1.1rem;
+}
+
+.features,
+.team {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.feature-grid,
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item,
+.team-member {
+  background-color: #010100;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature-item h3,
+.team-member h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+
+
+/* ############################### meals ############################# */
+.carousel img{ 
+  width: 70px;
+  height: 70px;
+}
+.sideBar h5 {
+   color: #ffffff;
+}
+.mealCard {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+position: relative;
+border: 1px solid gray;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+.mealCardImg {
+  width: 200px;
+
+}
+.mealCard img {
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all linear 0.4s;
+}
+.mealCard :hover img {
+  transform: scale(1.1);
+
+}
+.mealCardInfo {
+  width: 200px;
+  padding: 10px;
+
+}
+.mealCardInfo .addWish {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ############################### details ############################# */
+.detailsPage {
+   background-color: #010100;
+}
+.detailsPage .detailsImg {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailsPage .detailsImg img{ 
+  border-radius: 20px;
+  width: 65%;
+  height: 400px;
+}
+
+
+/* ############################### footer ############################# */
+
+footer {
+   background-color: #2a3855;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
