@@ -45,7 +45,7 @@ const renderWishMeals = () => {
     let cartona = "";
   for (let index = 0; index < wishMeals.length; index++) {
     cartona += `
-      <div class =" d-flex w-100 justify-content-center align-items-between">
+      <div class =" d-sm-flex w-100 justify-content-center align-items-between">
           <div class="">
               <img src=${wishMeals[index].strCategoryThumb} alt="Meal Image"/>
           </div>
