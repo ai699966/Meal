@@ -132,16 +132,30 @@ if (localStorage.getItem("wishMeals") != null) {
 }
 
 function shiftLeft () {
-  shiftAmount = shiftAmount - 150; 
-  if (shiftAmount > -440 || shiftAmount == -440) {
-    document.getElementsByClassName("rightArrow")[0].removeAttribute("disabled")
-   document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
-    
+  if (window.screen.width > 768) {
+    shiftAmount = shiftAmount - 150; 
+    if (shiftAmount > -440 || shiftAmount == -440) {
+      document.getElementsByClassName("rightArrow")[0].removeAttribute("disabled")
+     document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+      
+    } else {
+      shiftAmount = -440;
+      document.getElementsByClassName("leftArrow")[0].setAttribute("disabled", true)
+      document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+    }
   } else {
-    shiftAmount = -440;
-    document.getElementsByClassName("leftArrow")[0].setAttribute("disabled", true)
-    document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+    shiftAmount = shiftAmount - 40; 
+    if (shiftAmount > -440 || shiftAmount == -580) {
+      document.getElementsByClassName("rightArrow")[0].removeAttribute("disabled")
+     document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+      
+    } else {
+      shiftAmount = -580;
+      document.getElementsByClassName("leftArrow")[0].setAttribute("disabled", true)
+      document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+    }
   }
+
 };
  function shiftRight() {
   shiftAmount = shiftAmount + 150; 
