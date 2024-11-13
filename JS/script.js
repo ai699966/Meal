@@ -18,7 +18,7 @@ const renderMeals = () => {
   let cartona = "";
   for (let index = 0; index < allMeals.length; index++) {
     cartona += `
-    <div class ="mealCard col-1 ">
+    <div class ="mealCard col-4 ">
         <div class="mealCardImg">
             <img src=${allMeals[index].strCategoryThumb} alt="Meal Image"/>
         </div>
@@ -133,12 +133,12 @@ if (localStorage.getItem("wishMeals") != null) {
 
 function shiftLeft () {
   shiftAmount = shiftAmount - 150; 
-  if (shiftAmount > -580 || shiftAmount == -580) {
+  if (shiftAmount > -440 || shiftAmount == -440) {
     document.getElementsByClassName("rightArrow")[0].removeAttribute("disabled")
    document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
     
   } else {
-    shiftAmount = -580;
+    shiftAmount = -440;
     document.getElementsByClassName("leftArrow")[0].setAttribute("disabled", true)
     document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
   }
