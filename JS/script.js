@@ -71,7 +71,7 @@ async function renderCategoryMeals(prop) {
       let cartona = ``;
       for (let index = 0; index < meals.length; index++) {
         cartona += `
-        <div class ="mealCard col-1 ">
+        <div class ="mealCard col-4 ">
         <div class="mealCardImg">
             <img src=${meals[index].strMealThumb} alt="Meal Image"/>
         </div>
