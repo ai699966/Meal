@@ -1,13 +1,12 @@
 var allMeals = [];
-var wishMeals = [];
 var homeMeals = [];
 var category = document.getElementsByClassName("category");
+var shiftAmount = 0;
 
 async function getAllMeals() {
   let URL = `https://www.themealdb.com/api/json/v1/1/categories.php`;
   const response = await fetch(URL);
   console.log(response);
-
   const data = await response.json();
   allMeals = data.categories;
   console.log(allMeals);
@@ -40,20 +39,25 @@ const renderMeals = () => {
   }
 };
 const renderWishMeals = () => {
-  let cartona = "";
+  if (wishMeals.length == 0 ) {
+  document.getElementById("favMeal").innerHTML = `<h2 class="text-center py-3 text-white"> No Meals Added </h2>`;
+  } else {
+    let cartona = "";
   for (let index = 0; index < wishMeals.length; index++) {
     cartona += `
-      <div class ="mealCard col-1">
-          <div class="mealCardImg">
+      <div class =" d-flex w-100 justify-content-center align-items-between">
+          <div class="">
               <img src=${wishMeals[index].strCategoryThumb} alt="Meal Image"/>
           </div>
-          <div class="mealCardInfo">
-              <h4 class="text-center">${wishMeals[index].strCategory}</h4>
-              <div class ="addWish"><div><i class="fa-solid fa-heart cursor"></i></div></div>
+          <div class=" d-flex justify-content-center align-items-center">
+              <h6 class="text-center text-white">${wishMeals[index].strCategoryDescription}</h4>
           </div>
+          <div class="removeWish text-danger" onclick="removeFromWish(${wishMeals[index].idCategory})"><i class="fa-solid fa-xmark cursor"></i></div>
       </div>`;
   }
-  document.getElementById("wishList").innerHTML = cartona;
+  document.getElementById("favMeal").innerHTML = cartona;
+  }
+  
 };
 
 async function renderCategoryMeals(prop) {
@@ -102,10 +106,52 @@ for (let i = 0; i < category.length; i++) {
 const addToWishMeals = (meal) => {
   let selectedMeal = allMeals.filter((item) => item === meal);
   wishMeals.push(selectedMeal[0]);
+  console.log(wishMeals);
+  
+  localStorage.setItem("wishMeals", JSON.stringify(wishMeals));
+  document.getElementById("wish").innerHTML = wishMeals.length;
+
+};
+const removeFromWish = (id) => {
+  console.log(`remove ${id}`);
+  
+  let newWish = wishMeals.filter((items) => items.idCategory !== `${id}`);
+  wishMeals = newWish;
+  localStorage.setItem("wishMeals", JSON.stringify(wishMeals));
   document.getElementById("wish").innerHTML = wishMeals.length;
   renderWishMeals();
 };
-const removeFromWish = (meal) => {
-  let newWish = wishMeals.filter((items) => items.id !== meal.id);
-};
 getAllMeals();
+if (localStorage.getItem("wishMeals") != null) {
+  var wishMeals = JSON.parse(localStorage.getItem("wishMeals"));
+  document.getElementById("wish").innerHTML = wishMeals.length;
+  renderWishMeals();
+} else {
+   var wishMeals = [];
+  renderWishMeals();
+}
+
+function shiftLeft () {
+  shiftAmount = shiftAmount - 150; 
+  if (shiftAmount > -580 || shiftAmount == -580) {
+    document.getElementsByClassName("rightArrow")[0].removeAttribute("disabled")
+   document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+    
+  } else {
+    shiftAmount = -580;
+    document.getElementsByClassName("leftArrow")[0].setAttribute("disabled", true)
+    document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+  }
+};
+ function shiftRight() {
+  shiftAmount = shiftAmount + 150; 
+  if (shiftAmount  < 0 || shiftAmount == 0 ) {
+    document.getElementsByClassName("leftArrow")[0].removeAttribute("disabled")
+   document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;
+    
+  }else {
+    shiftAmount = 0;
+    document.getElementsByClassName("rightArrow")[0].setAttribute("disabled", true);
+    document.getElementsByClassName("menue")[0].style.transform =  `translateX(${shiftAmount}px)`;  
+  }
+};

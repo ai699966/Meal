@@ -184,6 +184,9 @@ h2 {
   height: 70px;
 }
 .sideBar h5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
    color: #ffffff;
 }
 .mealCard {
@@ -233,6 +236,35 @@ align-items: center;
   z-index: 9999;
 }
 
+.catImg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.menueList {
+  width: 80%;
+  overflow: hidden;
+}
+.menue {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+ transition: all linear 0.3s;
+}
+.menue  h5{
+  color: #fff;
+  text-align: center;
+}
+.menue img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
 /* ############################### details ############################# */
 .detailsPage {
    background-color: #010100;
@@ -265,6 +297,13 @@ footer a {
 }
 
 @media (max-width: 768px) {
+
+.header {
+  height: 100vh;
+}
+.pageName {
+  height: 30vh;
+}
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -277,5 +316,8 @@ footer a {
   .nav-links li {
     margin-left: 0;
     margin-right: 1rem;
+  }
+  .form-floating label {
+    display: none;
   }
 }
